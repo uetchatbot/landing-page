@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="UETChatbot là kênh chat với nguời lạ dành cho đối tượng sinh viên">
+    <meta name="keywords"
+          content="uetchatbot, chatbot, uet, vnu, đại học công nghệ, đại học quốc gia, chat với người lạ">
+
+    <title>UETChatbot</title>
+
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="UET Chatbot" />
+    <meta property="og:description" content="Chat với người lạ phiên bản UET mở rộng cho #VNU và #Earth" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://www.uetchatbot.me/images/logo.png" />
+    <meta property="og:url" content="https://www.uetchatbot.me" />
+    <meta property="og:site_name" content="UET Chatbot" />
+
+    <!-- Google Verify -->
+    <meta name="google-site-verification" content="6vYfOxVSfAHYYvhWuriWJBgUsHFaN33zMCiJRru5pMM"/>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/preloader.css" type="text/css" media="screen, print"/>
+
+    <link rel="stylesheet" href="css/font-style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+
+<body>
+<div id="preloader">
+    <div id="status">&nbsp;</div>
+</div>
+
+<div id="noti-layer">
+  <div class="noti-content-wrapper container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-3">
+        <img class="close-noti" id="close-noti" src="images/ic-close.png" alt="close">
+        <h2>Yehhhh...!</h2>
+        <p>
+          <img src="images/emoji/1f31f.png" class="emoji" style="margin: 0">
+          <img src="images/emoji/1f490.png" class="emoji" style="margin: 0">
+          <img src="images/emoji/2728.png" class="emoji" style="margin: 0">
+          <img src="images/emoji/1f386.png" class="emoji" style="margin: 0">
+          <img src="images/emoji/1f387.png" class="emoji" style="margin: 0">
+        </p>
+        <p>Hồ câu cá đã mở tại: <a href="https://fb.com/uetchatbot" target="blank">fb.com/uetchatbot</a></p>
+
+      </div>
+
+      <div class="col-md-8 col-md-offset-3">
+        <div class="fb-like" data-href="https://www.facebook.com/uetchatbot" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="canvas-container">
+</div>
+
+
+<header id="HOME" style="background-position: 50% -125px;">
+    <div class="section_overlay">
+        <nav class="navbar navbar-default navbar-fixed-top" id="nav-bar">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" id="collapse-btn" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#" id="nav-a">
+                        <img src="images/logo.png" id="img-logo" alt="">
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#HOME">Trang chủ</a></li>
+                        <li><a href="#ABOUT">Về tôi</a></li>
+                        <li><a href="#testimonials">Góc nhìn khác</a></li>
+                        <li><a href="#WORK">Funfact</a></li>
+                        <li><a href="#DONATE">Đóng góp</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="text-center">
+                    <div class="home_text wow fadeInUp animated">
+                        <h2>#uetchatbot</h2>
+                        <p>Hồ câu rộng lớn dành cho #VNU và #Earth</p>
+                        <img src="images/shape.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="about_us_area" id="ABOUT">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="about_title">
+                    <h2>VỀ TÔI</h2>
+                    <img src="images/shape.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4  wow fadeInLeft animated">
+                <div class="single_progress_bar">
+                    <h2>NGÀY SINH - 18/06/2016</h2>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                             aria-valuemax="100" style="width: 100%;">
+                            <span class="sr-only">100% Complete</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="single_progress_bar">
+                    <h2>ADMIN - 5</h2>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                             aria-valuemax="100" style="width: 100%;">
+                            <span class="sr-only">100% Complete</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="single_progress_bar">
+                    <h2>LOẠI HÌNH - MIỄN PHÍ</h2>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                             aria-valuemax="100" style="width: 100%;">
+                            <span class="sr-only">100% Complete</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="single_progress_bar">
+                    <h2>NỀN TẢNG - FACEBOOK MESSENGER</h2>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                             aria-valuemax="100" style="width: 100%;">
+                            <span class="sr-only">100% Complete</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 wow fadeInDown animated">
+                <p class="about_us_p">#UETChatbot là kênh chat với người lạ dành cho đối tượng sinh viên, đặc biệt hỗ
+                    trợ cho #VNU.
+                </p>
+                <p class="about_us_p">
+                    Được ra mắt lần đầu vào 18/06/2016, vì không đủ chi phí duy trì server nên sau một khoảng
+                    thời gian ngắn Chatbot đã tạm dừng. Mãi cho tới 23/02/2017, nhờ có sự hỗ trợ bên ngoài và sự quyết
+                    tâm của đội ngũ #admin, Chatbot đã quay trở lại.
+                </p>
+            </div>
+            <div class="col-md-4  wow fadeInRight animated">
+                <p class="about_us_p">#UETChatbot mang trong mình sứ mệnh kết nối sinh viên #VNU và #Earth, tạo nên môi
+                    trường trò chuyện lành mạnh, vui vẻ.</p>
+                <p class="about_us_p">
+                    Chân thành cám ơn anh Dũng K55-UET và nhóm FRIES-UET đã tài trợ server, giúp Chatbot hoạt động ổn
+                    định đến ngày
+                    hôm nay <img src="images/emoji/heart.png" class="emoji" style="margin: 0">
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="testimonials" class="testimonails wow fadeInUp animated">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="about_title">
+                    <h2>Góc nhìn khác</h2>
+                    <img src="images/shape.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="">
+                <div class="owl-carousel testimonials same-height-row owl-theme">
+
+                    <div class="item wow fadeInLeft animated">
+                        <div class="testimonial same-height-always">
+                            <div class="text">
+                                <p>Nửa tháng rồi chưa pp, gặp rồi, nói chuyện nhiều lắm rồi, mà cũng không hiểu sao
+                                    không pp
+                                    được, dọa nhau chán chê xong chuyển qua fb nói chuyện kệ m* chatbot.
+                                    <br>
+                                    Cám ơn chatbot đã cho em tìm thấy 1 thằng đệ-con Pet, ít nhất đã giúp em vượt qua
+                                    giai đoạn khó khăn này.</p>
+                            </div>
+                            <div class="bottom">
+                                <div class="testimonial-icon"><i class="pe-7s-comment"></i></div>
+                                <div class="name-picture"><img alt="" src="images/reviewer/tranmyhanh.jpg">
+                                    <h5>Trần Mỹ Hạnh</h5>
+                                    <p>HNUE</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item wow fadeInUp animated">
+                        <div class="testimonial same-height-always">
+                            <div class="text">
+                                <p>Cuộc đời này, gặp gỡ nhau là đã có duyên rồi =))) 1 bạn gái đáng yêu dễ thương vch :v
+                                    xong còn bựa lầy lội nữa.
+                                    <br>
+                                    Có một niềm yêu mến chất ngất với trai CNTT.</p>
+                            </div>
+                            <div class="bottom">
+                                <div class="testimonial-icon"><i class="pe-7s-comment"></i></div>
+                                <div class="name-picture"><img alt="" src="images/reviewer/mylinh.jpg">
+                                    <h5>Mỹ Linh</h5>
+                                    <p>USSH</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item wow fadeInRight animated">
+                        <div class="testimonial same-height-always">
+                            <div class="text">
+                                <p>Mình chỉ muốn nói là mình yêu UET lắm lắm lắm <3 Cảm ơn các chàng trai UET đã mang
+                                    đến cho mọi người một ứng dụng rất thú vị như thế này. Cảm thấy vui và tự hào về
+                                    các cậu nhiều nhiều nhiều.
+                                    <br>
+                                    From VNU with love <3<3<3</p>
+                            </div>
+                            <div class="bottom">
+                                <div class="testimonial-icon"><i class="pe-7s-comment"></i></div>
+                                <div class="name-picture"><img alt="" src="images/reviewer/girl.png">
+                                    <h5>Cá</h5>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial same-height-always">
+                            <div class="text">
+                                <p>Zai uet dễ thương ghê cơ ạ. Các anh cựu sinh viên năm cuối khuyên em học tập tốt các
+                                    kiểu.
+                                    Đừng để bị trả nợ môn.... nói chuyện cute kinh khủng luôn.
+                                    <br>
+                                    Nói chung là bị cuồng zai uet từ bây giờ hihi ^^</p>
+                            </div>
+                            <div class="bottom">
+                                <div class="testimonial-icon"><i class="pe-7s-comment"></i></div>
+                                <div class="name-picture"><img alt="" src="images/reviewer/girl2.png">
+                                    <h5>Cá</h5>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="fun_facts">
+    <section class="header parallax home-parallax page" id="fun_facts" style="background-position: 50% -150px;">
+        <div class="section_overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 wow fadeInLeft animated">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="single_count">
+                                    <i class="icon-profile-male"></i>
+                                    <h3><span class="counter">61</span>K+</h3>
+                                    <p>Người dùng</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="single_count">
+                                    <i class="icon-chat"></i>
+                                    <h3><span class="counter">900</span>K+</h3>
+                                    <p>Lượt thả thính</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="single_count">
+                                    <i class="icon-document"></i>
+                                    <h3><span class="counter">41</span>M+</h3>
+                                    <p>Tin nhắn</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 wow fadeInRight animated">
+                        <div class="imac">
+                            <img src="images/ip_chat.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<section class="work_area" id="WORK">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="work_title  wow fadeInUp animated">
+                    <h1>Funfact</h1>
+                    <img src="images/shape.png" alt="">
+                    <p>#UETChatbot đã được lấy cảm hứng và chuyển thể thành phim và MV.
+                        <br>
+                        Nội dung kể về những câu chuyện tình cảm có thật giữa cần thủ và cá.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 no_padding wow fadeInLeft animated">
+                <div class="single_image">
+                    <img src="images/ic_theconcau.jpg" alt="">
+                    <a href="https://youtu.be/S0svlzWmjB0" target="_blank">
+                        <div class="image_overlay">
+                            <div class="img-ribbon"><i class="fa fa-youtube" aria-hidden="true"></i></div>
+                            <h2>Phim ngắn</h2>
+                            <h4>THẾ CÒN CẬU | S6 TEAM</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 no_padding wow fadeInUp animated">
+                <div class="single_image">
+                    <img src="images/ic_henmotmai.jpg" alt="">
+                    <a href="https://youtu.be/jZaCAbZ9PF8" target="_blank">
+                        <div class="image_overlay">
+                            <div class="img-ribbon"><i class="fa fa-youtube" aria-hidden="true"></i></div>
+                            <h2>MV</h2>
+                            <h4>Hẹn một mai | SGUET</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 no_padding wow fadeInRight animated">
+                <div class="single_image">
+                    <img src="images/ic_noinaycoanh.jpg" alt="">
+                    <a href="https://youtu.be/d2YvR3k_OuA" target="_blank">
+                        <div class="image_overlay">
+                            <div class="img-ribbon"><i class="fa fa-youtube" aria-hidden="true"></i></div>
+                            <h2>Nhạc chế</h2>
+                            <h4>Nơi này có anh | UET-er</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="call_to_action">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 wow fadeInLeft animated">
+                <div class="left">
+                    <h2>Còn bạn? Bạn đã tìm được cá của đời mình chưa?</h2>
+                </div>
+            </div>
+            <div class="col-md-3 col-md-offset-1 wow fadeInRight animated">
+                <div class="baton">
+                    <a href="http://m.me/uetchatbot">
+                        <button type="button" class="btn btn-primary cs-btn">THẢ CÂU</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact" id="DONATE">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="contact_title  wow fadeInUp animated">
+                    <h1>đóng góp</h1>
+                    <img src="images/shape.png" alt="">
+                    <p>Nếu bạn yêu quý #UETChatbot, và muốn kênh chat phát triển hơn, hãy đóng góp cho bọn mình <img
+                            src="images/emoji/1f601.png" class="emoji" style="margin: 0"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12  wow fadeInRight animated">
+                <button type="button" class="btn btn-primary cs-btn btn-donate" id="btn-phone-card">Thẻ điện thoại
+                </button>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInRight animated">
+                <button type="button" class="btn btn-primary cs-btn btn-donate btn-disabled">Credit card - coming soon
+                </button>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInRight animated">
+                <button type="button" class="btn btn-primary cs-btn btn-donate btn-disabled">Paypal - coming soon
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container div-hidden" id="phone-card-container">
+        <div class="row">
+            <form method="post" class="contact-form" action="#" id="form-donate">
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-md-4">
+                            <p>Nhà mạng hỗ trợ: Viettel, Mobifone, Vinaphone</p>
+                            <p>Pin là phần mã dưới lớp cào của thẻ</p>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="serial" name="serial" placeholder="Serial"
+                                   data-toggle="tooltip" data-placement="top" title="Mã Serial" required>
+                            <input type="text" class="form-control" id="pin" name="pin" placeholder="Pin"
+                                   data-toggle="tooltip" data-placement="top" title="Mã PIN" required>
+                            <select class="form-control" id="type" name="type" data-toggle="tooltip"
+                                    data-placement="top" title="Loại thẻ" required>
+                                <option>viettel</option>
+                                <option>mobifone</option>
+                                <option>vinaphone</option>
+                            </select>
+
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Tên của bạn"
+                                   data-toggle="tooltip" data-placement="top" title="Tên của bạn" required>
+                            <textarea class="form-control" id="message" name="msg"
+                                      placeholder="Lời nhắn ..." data-toggle="tooltip" data-placement="top"
+                                      title="Lời nhắn"></textarea>
+                            <button type="submit" class="btn btn-default submit-btn form_submit">ĐÓNG GÓP</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="work-with   wow fadeInUp animated">
+                    <h3>hope you enjoy <img src="images/emoji/1f917.png" class="emoji" style="margin: 0"></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <div class="container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="footer_logo   wow fadeInUp animated">
+                        <img src="images/logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center   wow fadeInUp animated">
+                    <div class="social">
+                        <h2>Follow Me on Here</h2>
+                        <ul class="icon_list">
+                            <li><a href="https://www.facebook.com/uetchatbot" target="_blank"><i
+                                    class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCYtF-IXUxcFNwyzRiTAwFiA" target="_blank"><i
+                                    class="fa fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="social">
+                        <h2>Email Me</h2>
+                        <p>uetchatbot@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="copyright_text   wow fadeInUp animated">
+                        <p>&copy; uetchatbot 2017. All Right Reserved By <a
+                                href="https://www.facebook.com/uetchatbot/" target="_blank">uetchatbot Team</a>
+                        </p>
+                        <p>Made with <i class="fa fa-heart txt-highlight" aria-hidden="true" style="color: red"></i> for
+                            awesome people.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<script src="js/jquery.nicescroll.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/heart-background.js"></script>
+<script src="js/script.js"></script>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.10&appId=1546891328940932";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-98614520-1', 'auto');
+    ga('send', 'pageview');
+</script>
+
+</body>
+
+</html>
